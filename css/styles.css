@@ -4,6 +4,8 @@ body{
    background-color: #FFFFFF;
 }
 
+
+
 :root{
 --background-color: #FFF;
 --IRIS: #4D5AE5;
@@ -39,16 +41,74 @@ a:focus{
 .header-list-link:focus {
     color: #404bbf;
 }
+/* HW3 */
 
+.container {
+    max-width:auto;
+    padding-left: 0;
+    padding: right 0;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    display: block;
+}
+/* Reset end */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 /* HEADER*/
 
 .header {
 
 }
+.header-container {
+border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+display: flex;
+    width: 1440px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
 
 .header-nav {
-   
+display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 .header-logo {
@@ -59,6 +119,11 @@ a:focus{
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4D5AE5;
+
+        display: inline-flex;
+            height: 24px;
+            align-items: center;
+            flex-shrink: 0;
 }
 .header-span{
     color: var(--NAVY-BLUE);
@@ -125,12 +190,14 @@ a:focus{
 }
 
 .hero-title {
-
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+    font-weight: 700;
+display: block;
+padding: 188px 472px 48px 472px;
 }
 
 .hero-button {
@@ -142,13 +209,26 @@ a:focus{
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 169px;
+    height: auto;
 }
 
 .hero-button:hover,
 .hero-button:focus{
 background-color: #404BBF;
-
 }
+
+.hero-main-container{
+display: block;
+gap: 48px;
+margin: auto;
+margin-bottom: 0;
+}
+
 
 /*< !-- Section 2-->*/
 
@@ -156,7 +236,6 @@ background-color: #404BBF;
     list-style: none;
     }
 
-.visually-hidden {}
 
 .benefits-socials {}
 
