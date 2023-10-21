@@ -34,11 +34,10 @@ width: 1168px;
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
-display: flex;    
-  
+display: flex;   
 }
 .link {
-    text-decoration: none
+    text-decoration: none;
 }
 .header-list-link:hover {
     color: #404bbf;
@@ -73,8 +72,9 @@ a {
     color: currentColor;
 }
 
-img {
+.img {
     display: block;
+
 }
 /* Reset end */
 .visually-hidden {
@@ -170,12 +170,12 @@ padding: 24px 0;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    font-style: normal
+    font-style: normal;
 }
 
 .header-address-menu {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
     padding: 24px 0;
 }
 
@@ -298,12 +298,13 @@ width: calc((100% - 72px) / 4);
 /*< !-- Section 3-->*/
 
 .intent {
-
     padding-bottom: 120px;
+   
 }
 
 .intent-container{
-  
+display: flex;
+    flex-direction: column;
 }
 .intent-title {
     font-size: 36px;
@@ -325,13 +326,12 @@ width: calc((100% - 72px) / 4);
 }
 
 /*< !-- Section 4-->*/
-
 .team {
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    display: flex;
-    
+    padding: 120px 0;
+    display: block;
+    flex-direction: column;
+ 
 }
 
 .team-title {
@@ -341,24 +341,43 @@ width: calc((100% - 72px) / 4);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--NAVY-BLUE);
-margin-bottom: 72px;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+ 
 }
 
 .team-social {
     display: flex;
     gap: 24px;
+    
 }
 
 .list {}
 
 .team-list {
     background-color: #FFFFFF;
-width: calc((100% - 72px) / 4);
-border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
-.team-title-container{
-padding: 32px 0;
+.te1am-container{
+    padding: 32px 0;
+    display: inline-flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
 }
+
+.team-title-container {
+    padding: 32px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .team-title-card {
     font-weight: 500;
     font-size: 20px;
@@ -366,7 +385,15 @@ padding: 32px 0;
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE);
     text-align: center;
-margin-bottom: 8px;
+    margin-bottom: 8px;
+
+display: inline-flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    
 }
 
 .team-text {
@@ -376,7 +403,6 @@ margin-bottom: 8px;
     color: var(--SLATE);
     text-align: center;
 }
-
 /*< !-- Footer-->*/
 
 .footer {
@@ -384,7 +410,8 @@ margin-bottom: 8px;
 padding: 100px 0;
 }
 .footer-text-container{
-
+display: flex;
+    flex-direction: column;
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
