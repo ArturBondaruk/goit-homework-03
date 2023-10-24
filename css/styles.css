@@ -30,8 +30,9 @@ a:focus{
 
 .container{
 width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+
+    margin-left: auto;
+    margin-right: auto;
   
 }
 .link {
@@ -46,7 +47,10 @@ width: 1158px;
 }
 /* HW3 */
 
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 ul,
 ol {
@@ -72,6 +76,8 @@ a {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 /* Reset end */
 
@@ -87,6 +93,7 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
+
 *::before,
 *::after {
     box-sizing: border-box;
@@ -96,7 +103,7 @@ img {
 
 .header {
 border-bottom: 1px solid #e7e9fc;
-display: block;
+
 }
 .header-container {
 border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
@@ -117,6 +124,7 @@ justify-content: space-between;
 align-items: center;
 gap: 40px;
 box-sizing: border-box;
+
 }
 
 .header-logo {
@@ -127,7 +135,7 @@ box-sizing: border-box;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4D5AE5;
-
+padding: 24px 0;
 margin-right: 76px;
 
 }
@@ -148,8 +156,8 @@ gap: 40px;
 }
 
 .header-list {
-    padding-top: 24px;
-    padding-bottom: 24px;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 
 .header-list-link {
@@ -160,7 +168,8 @@ gap: 40px;
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
-    gap: 40px;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 .header-list-link:hover
 .header-list-link:focus {
@@ -175,7 +184,7 @@ gap: 40px;
     letter-spacing: 0.02em;
     font-style: normal;
     display: flex;
-    padding: 24px 0;
+   
 }
 
 .header-address-menu {
@@ -196,13 +205,14 @@ display: inline-flex;
 
 
 .contact{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--SLATE);
     padding: 24px 0;
+    display: block;
    
 }
 .contact:hover,
@@ -266,30 +276,28 @@ margin: 0 auto;
 
 .benefits {
     padding: 120px 0;
-    display: flex;
+padding-bottom: 120px;
     
     }
 
 
 .benefits-socials {
-   display: flex;
   justify-content: center;
-    gap: 24px;
- 
     margin: 0 auto;
     display: flex;
     gap: 24px;
+
 }
 
 .benefits-list {
-margin-right: 24px;
+
 width: calc((100% - 72px) / 4);
 }
 .benefits-container{
    
-        padding-top: 120px;
-        padding-bottom: 120px;
-        font-weight: 264px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    font-weight: 264;
  
 }
 .benefits-title {
@@ -306,7 +314,8 @@ width: calc((100% - 72px) / 4);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--SLATE)
+    width: 264px;
+    color: var(--SLATE);
 }
 
 /*< !-- Section 3-->*/
