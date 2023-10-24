@@ -377,7 +377,7 @@ gap: 24px;
 
 .team-list {
     background-color: #FFF;
-    display: flex;
+  
     gap: 24px;
     list-style: none;
     width: calc((100% - 72px) / 4);
@@ -417,6 +417,9 @@ display: flex;
 flex-direction: column;
 }
 .footer-logo {
+    display: inline-block;
+    width: 115px;
+    margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -425,8 +428,6 @@ flex-direction: column;
     text-transform: uppercase;
     color: var(--IRIS);
     text-decoration: none;
-    display: inline-block;
-    margin-bottom: 16px;
 }
 
 .footer-text {
@@ -435,10 +436,22 @@ flex-direction: column;
     letter-spacing: 0.02em;
     max-width: 264px;
 }
-
+.footer-span {
+    color: var(--CLOUD);
+}
 /* PORTFOLIO*/
 
-.navigation- {}
+.portfolio-section{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.portfolio-button-list{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+    justify-content: center;
+}
 
 .social {}
 
@@ -453,18 +466,41 @@ flex-direction: column;
     color: var(--IRIS);
     background-color: var(--CLOUD);
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
 }
 
 .navigation-button:hover,
 .navigation-button:focus{
     background-color: #404BBF;
     color: var(--background-color);
-    
+    border: 1px solid transparent;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.navigation-socials-portfolio {}
+.navigation-socials-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 
-.navigation-list {}
+}
+
+.navigation-list {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-list-item{
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
+margin-bottom: 8px;
+
+}
 
 .link {}
 
@@ -479,9 +515,8 @@ color: var(--NAVY-BLUE);
 .potfolio-text{
 line-height: 1.5;
 letter-spacing: 0.02em;
+font-size: 16px;
+font-weight: 400;
 color: var(--SLATE);
 }
 
-.footer-span{
-    color: var(--CLOUD);
-}
