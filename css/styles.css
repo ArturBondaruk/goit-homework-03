@@ -87,6 +87,10 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 /* HEADER*/
 
@@ -96,7 +100,6 @@ display: block;
 }
 .header-container {
 border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
-width: 1158px;
     height: 72px;
     justify-content: center;
     align-items: center;
@@ -140,12 +143,12 @@ margin-right: 76px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 display: flex;
-padding: 24px 0;
+gap: 40px;
 
 }
 
 .header-list {
-    margin-right: 40px;
+    padding: 24px 0;
 }
 
 .header-list-link {
@@ -176,7 +179,7 @@ padding: 24px 0;
 
 .header-address-menu {
 display: flex;
-    padding: 24px 0;
+gap: 40px;
 }
 
 .header-address-list{
@@ -199,6 +202,7 @@ display: inline-flex;
     text-decoration: none;
     color: var(--SLATE);
     padding: 24px 0;
+   
 }
 .contact:hover,
 .contact:focus {
@@ -267,23 +271,24 @@ margin: 0 auto;
 
 
 .benefits-socials {
-    display: flex;
-    justify-content: space-between;
+   display: flex;
+  justify-content: center;
     gap: 24px;
-    width: calc((100% - 72px) / 4);
+ 
     margin: 0 auto;
     display: flex;
     gap: 24px;
 }
 
 .benefits-list {
-width: calc((100% - 72px) / 4);
-
+margin-right: 24px;
 }
 .benefits-container{
+   
         padding-top: 120px;
         padding-bottom: 120px;
         font-weight: 264px;
+    width: calc((100% - 72px) / 4);
         
 }
 .benefits-title {
@@ -338,53 +343,49 @@ display: flex;
     padding: 120px 0;
     background-color: #F4F4FD;
     padding: 120px 0;
-    display: block;
-    flex-direction: column;
- 
+display: flex;
+gap: 24px;
 }
 
 .team-title {
-    margin-bottom: 72px;
-    text-align: center;
-    text-transform: capitalize;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE);
+    margin-bottom: 72px;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .team-list {
     display: flex;
     gap: 24px;
     list-style: none;
-}
-
-.team-container {
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-card-container{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.team-container { 
     background-color: #FFFFFF;
-    border-radius: 0 0 4px 4px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+.team-title-card{
+text-align: center;
+margin-bottom: 8px;
 
-.team-title-container {
-    padding: 32px 0;
-    text-align: center;
-}
-
-.team-title-card {
-    text-align: center;
-    margin-bottom: 8px;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--NAVY-BLUE);
 }
 
 .team-text {
-    text-align: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--SLATE);
+    text-align: center;
 }
 /*< !-- Footer-->*/
 
@@ -408,8 +409,6 @@ display: flex;
     display: inline-block;
     margin-bottom: 16px;
 }
-
-.header-studio-logo {}
 
 .footer-text {
     line-height: 1.5;
