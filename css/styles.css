@@ -342,16 +342,14 @@ display: flex;
 /*< !-- Section 4-->*/
 .team {
     padding: 120px 0;
-    background-color: #F4F4FD;
-    padding: 120px 0;
+background-color: #F4F4FD;
+padding: 120px 0;
 display: flex;
 gap: 24px;
 }
 
 .team-container {
     background-color: var(--CLOUD);
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .team-title {
@@ -377,8 +375,7 @@ gap: 24px;
     border-radius: 0px 0px 4px 4px;
 }
 .team-card-container{
-    padding-top: 32px;
-    padding-bottom: 32px;
+
 }
 
 .team-name-container{
@@ -403,12 +400,12 @@ margin-bottom: 8px;
 /*< !-- Footer-->*/
 
 .footer {
-    background-color: var(--NAVY-BLUE) ;
+background-color: var(--NAVY-BLUE) ;
 padding: 100px 0;
 }
 .footer-text-container{
 display: flex;
-    flex-direction: column;
+flex-direction: column;
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
