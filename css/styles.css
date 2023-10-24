@@ -83,15 +83,15 @@ img {
 
 .visually-hidden {
     position: absolute;
-    white-space: nowrap;
     width: 1px;
     height: 1px;
-    overflow: hidden;
+    margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+    overflow: hidden;
 }
 
 *::before,
@@ -417,7 +417,7 @@ display: flex;
 flex-direction: column;
 }
 .footer-logo {
-    display: inline-block;
+    
     width: 115px;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
@@ -428,13 +428,17 @@ flex-direction: column;
     text-transform: uppercase;
     color: var(--IRIS);
     text-decoration: none;
+    display: inline-flex;
+        height: 24px;
+        align-items: center;
+        flex-shrink: 0;
 }
 
 .footer-text {
     line-height: 1.5;
     color: var(--CLOUD) ;
     letter-spacing: 0.02em;
-    max-width: 264px;
+    width: 264px;
 }
 .footer-span {
     color: var(--CLOUD);
@@ -510,6 +514,7 @@ margin-bottom: 8px;
     line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--NAVY-BLUE);
+margin-bottom: 8px;
 }
 
 .potfolio-text{
