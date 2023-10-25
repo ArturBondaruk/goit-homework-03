@@ -30,10 +30,9 @@ a:focus{
 
 .container{
 width: 1158px;
-
     margin-left: auto;
     margin-right: auto;
-  
+  padding: 0 15px;
 }
 .link {
     text-decoration: none;
@@ -155,10 +154,8 @@ gap: 40px;
 
 }
 
-.header-list {
-padding-top: 24px;
-padding-bottom: 24px;
-}
+.header-list {}
+
 
 .header-list-link {
     color: var(--NAVY-BLUE);
@@ -167,7 +164,7 @@ padding-bottom: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
-    display: flex;
+    display: block;
 padding-top: 24px;
 padding-bottom: 24px;
 }
@@ -238,7 +235,7 @@ display: inline-flex;
     font-weight: 700;
     max-width: 496px;
 margin: 0 auto;
-padding-bottom: 48px;
+margin-bottom: 48px;
 }
 
 .hero-button {
@@ -265,9 +262,6 @@ background-color: #404BBF;
 }
 
 .hero-main-container{
-display: block;
-padding-top: 188px;
-margin: 0 auto;
 
 }
 
@@ -294,11 +288,7 @@ padding-bottom: 120px;
 width: calc((100% - 72px) / 4);
 }
 .benefits-container{
-   
-    padding-top: 120px;
-    padding-bottom: 120px;
-    font-weight: 264;
- 
+
 }
 .benefits-title {
     font-weight: 500;
@@ -326,8 +316,6 @@ width: calc((100% - 72px) / 4);
 }
 
 .intent-container{
-display: flex;
-    flex-direction: column;
 }
 .intent-title {
     font-size: 36px;
@@ -350,11 +338,9 @@ display: flex;
 
 /*< !-- Section 4-->*/
 .team {
-    padding: 120px 0;
+
 background-color: #F4F4FD;
 padding: 120px 0;
-display: flex;
-gap: 24px;
 }
 
 .team-container {
@@ -377,9 +363,6 @@ gap: 24px;
 
 .team-list {
     background-color: #FFF;
-  
-    gap: 24px;
-    list-style: none;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
@@ -416,7 +399,6 @@ padding: 100px 0;
 }
 .footer-logo {
     display: inline-block;
-    width: 115px;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -499,7 +481,7 @@ padding: 100px 0;
 padding: 32px 16px;
 border: 1px solid #e7e9fc;
 border-top: none;
-margin-bottom: 8px;
+
 
 }
 
